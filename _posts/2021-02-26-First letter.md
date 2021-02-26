@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "기록하는 삶 블로그 시작"
 ---
 

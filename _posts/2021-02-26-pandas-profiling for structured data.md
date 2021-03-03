@@ -1,7 +1,13 @@
 ---
 layout: single
 title:  "[Python libs] pandas-profiling for pandas DataFrame"
+exerpt : "pandas dataframe의 EDA를 html로 report할 수 있는 라이브러리"
 summary: "pandas-profiling"
+
+
+tags: [Machine learning, Deep learning, Data science]
+toc : true
+toc_sticky : true
 ---
 
 pandas Dataframe 형태의 데이터에 대해서 변수별 통계 특성 계산, histogram 그리기, 결측값 확인, 상관성 분석까지 기본적으로 수행하는 데이터 분석에 대한 리포트를 편리하게 만들 수 있는 라이브러리입니다. table 형태의 정형 데이터를 분석할 때 처음에 사용해보면 좋을 것 같습니다.  

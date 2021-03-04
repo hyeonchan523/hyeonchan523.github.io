@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: posts
 title:  "[Medium] 클래스 불균형 다루기"
 exerpt : "클래스 불균형 문제를 완화하기 위한 loss 함수의 weight 부여하기"
 summary: "class weightdhk sample weight "

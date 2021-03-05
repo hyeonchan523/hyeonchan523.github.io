@@ -48,7 +48,8 @@ report.to_widgets()
 # 업로드시 위젯이 보이지 않아서 이미지로 대체합니다.
 ```
 
-![img](../assets/img/widget.png)
+![img]({{site.url}}/assets/img/widget.png)
+
 
 
 ```python

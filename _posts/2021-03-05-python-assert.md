@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[python] assert문으로 디버깅"
+title:  "[Python] assert문으로 디버깅"
 exerpt : "assert문으로 예상치 못한 버그를 방지하기"
 summary: "assert문을 활용하면 디버깅을 효과적으로 할 수 있다."
 

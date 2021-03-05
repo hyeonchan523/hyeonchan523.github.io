@@ -99,9 +99,9 @@ author:
   avatar           : "../assets/img/profile.jpg"
   bio              : "Graduate student at SNU"
   location         : "Somewhere"
-  email            :
+  email            : "hyeonchan523@snu.ac.kr"
   links:
-    - label: "Email : hyeonchan523@snu.ac.kr"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "hyeonchan523@snu.ac.kr"
     - label: "Website"

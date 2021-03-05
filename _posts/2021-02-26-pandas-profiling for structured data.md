@@ -4,7 +4,7 @@ title:  "[Python libs] pandas-profiling for pandas DataFrame"
 exerpt : "pandas dataframe의 EDA를 html로 report할 수 있는 라이브러리"
 summary: "pandas-profiling"
 
-
+category : python
 tags: [Machine learning, Deep learning, Data science]
 toc : true
 toc_sticky : true

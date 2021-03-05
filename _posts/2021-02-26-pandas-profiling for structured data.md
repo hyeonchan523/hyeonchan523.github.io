@@ -48,7 +48,7 @@ report.to_widgets()
 # 업로드시 위젯이 보이지 않아서 이미지로 대체합니다.
 ```
 
-![img](https://github.com/hyeonchan523/hyeonchan523.github.io/blob/master/assets/widget.png?raw=true)
+![img](../assets/img/widget.png)
 
 
 ```python

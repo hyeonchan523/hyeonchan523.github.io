@@ -5,3 +5,7 @@ names = ['Alice',
          'Dilbert'
          ]
 
+names = ['Alice', 
+         'Bob', 
+         'Dilbert',
+         ]

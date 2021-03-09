@@ -5,7 +5,7 @@ exerpt : "pandas dataframe의 EDA를 html로 report할 수 있는 라이브러�
 summary: "pandas-profiling"
 
 category : python
-tags: [Machine learning, Deep learning, Data science]
+tags: [Machine learning, Deep learning, Data science, python]
 toc : true
 toc_sticky : true
 ---

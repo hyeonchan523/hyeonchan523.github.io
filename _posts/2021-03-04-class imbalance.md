@@ -22,7 +22,7 @@ toc_sticky : true
     - [데이콘 운동 동작 분류 대회](https://dacon.io/competitions/official/235689/data/)에서 데이터 불균형이 존재하는 데이터 접근 가능
     - Non-Exercise는 1500개가 넘는 데이터가 존재하지만 그 외의 데이터는 200개 이하의 데이터를 갖습니다.
 
-![img]({{site.url}}assets/img/class_imbalance.png)
+![img]({{site.url}}/assets/img/class_imbalance.png)
 
 
 ## Class imbalace가 왜 문제가 되는지

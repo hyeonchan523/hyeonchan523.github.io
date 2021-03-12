@@ -1,10 +1,13 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Data Science"
+    url: /Categories/DS
+  - title: "Python"
+    url: /Categories/python
   - title: "Tags"
-    url: /tags/
-
+    url: /tags/ 
+  #- title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

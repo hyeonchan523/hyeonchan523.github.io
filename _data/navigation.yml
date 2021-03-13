@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Data Science"
-    url: /Categories/DS/
+    url: /categories/DS/
   - title: "Python"
-    url: /Categories/python/
+    url: /categories/python/
   - title: "Tags"
     url: /tags/ 
   #- title: "Quick-Start Guide"

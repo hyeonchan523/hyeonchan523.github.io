@@ -56,7 +56,7 @@ toc_sticky : true
     <img src = '{{site.url}}/assets/img/memory_leak_n.png' align = 'center'>
 - 메모리 사용량이 증가하지 않음
 
-## Reference
+# Reference
 
 [[1]] wikipedia
 

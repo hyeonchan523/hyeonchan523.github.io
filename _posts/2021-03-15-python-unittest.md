@@ -74,7 +74,7 @@ Test-driven develop(TDD)는 개발이 끝난 후에 테스트를 진행하는 �
 
 ---
 
-<script src="[https://gist.github.com/hyeonchan523/e15a440b4ff9c1c52bdbb03a35f0429d.js](https://gist.github.com/hyeonchan523/e15a440b4ff9c1c52bdbb03a35f0429d.js)"></script>
+<script src="https://gist.github.com/hyeonchan523/e15a440b4ff9c1c52bdbb03a35f0429d.js"></script>
 
 - main 코드는 다음과 같음
     1. 입력으로 0을 받으면 프로그램을 종료
@@ -83,7 +83,7 @@ Test-driven develop(TDD)는 개발이 끝난 후에 테스트를 진행하는 �
 
 ---
 
-<script src="[https://gist.github.com/hyeonchan523/6b6d2e1e9aee6131c853f5d13bb688d0.js](https://gist.github.com/hyeonchan523/6b6d2e1e9aee6131c853f5d13bb688d0.js)"></script>
+<script src="https://gist.github.com/hyeonchan523/6b6d2e1e9aee6131c853f5d13bb688d0.js"></script>
 
 - 각 기능을 수행하는 코드는 check_module에 함수로 만듬
     1. `validity_check`는 입력이 음수이거나 정수가 아닐 때 메시지를 print하고 False를, 양의 정수 입력은 True를 return
@@ -91,7 +91,7 @@ Test-driven develop(TDD)는 개발이 끝난 후에 테스트를 진행하는 �
 
 ---
 
- <script src="[https://gist.github.com/hyeonchan523/712c2f03636c09fe56ecaa8b525ddd3c.js](https://gist.github.com/hyeonchan523/712c2f03636c09fe56ecaa8b525ddd3c.js)"></script>
+ <script src="https://gist.github.com/hyeonchan523/712c2f03636c09fe56ecaa8b525ddd3c.js"></script>
 
 - 이 모듈의 함수들을 테스트하기 위한 코드를 위와 같이 작성
     1. `setUp`에서 각 테스트를 시작하기 전에 공통적으로 실행할 코드로 입력 연도를 선언

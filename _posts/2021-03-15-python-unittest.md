@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[Python libs] Test-driven develope를 위한 python unittest 라이브러리"
-exerpt : "TDD를 위한 파이썬 유닛 테스트 라이브러리"
+excerpt : "TDD를 위한 파이썬 유닛 테스트 라이브러리"
 summary: "unittest"
 
 category : python

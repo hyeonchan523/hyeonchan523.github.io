@@ -2,7 +2,7 @@
 layout: single
 title:  "기록하는 삶 블로그 시작"
 summary: "꾸준함이 탁월함이다."
-
+excerpt: '시작하는 글'
 tags: [essay]
 toc : true
 toc_sticky : true

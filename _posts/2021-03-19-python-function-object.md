@@ -23,8 +23,8 @@ toc_sticky : true
 
 <script src="https://gist.github.com/hyeonchan523/8d274d85be3b82e0a718a8dfa2878d53.js"></script>
 
-- 위와 같은 경우에 plus_one 뒤에 ()가 붙지 않아 호출되지 않고,  speak_loud는 yell 함수를 가리키는 변수가 된다.
-- add_one 변수로 plus_one 함수를 호출할 수 있다. 이때 `del` 로 plus_one을 지우더라도 add_one은 정상적으로 작동한다
+- 위와 같은 경우에 level_1 뒤에 ()가 붙지 않아 호출되지 않고,  add_one은 level_1 함수를 가리키는 변수가 된다.
+- one 변수로 plus_one 함수를 호출할 수 있다. 이때 del 로 level_1을 지우더라도 one은 정상적으로 작동한다
 
 ### 함수는 데이터 구조에 저장할 수 있다
 

@@ -8,6 +8,7 @@ category : python
 tags: [python]
 toc : true
 toc_sticky : true
+use_math : true
 ---
 # Memory Leakage
 

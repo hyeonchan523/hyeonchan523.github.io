@@ -8,6 +8,7 @@ category : DS
 tags: [Machine learning, Deep learning, Data imbalance]
 toc : true
 toc_sticky : true
+use_math : true
 ---
 이 포스팅은 다음 [블로그](https://medium.com/gumgum-tech/handling-class-imbalance-by-introducing-sample-weighting-in-the-loss-function-3bdebd8203b4)를 주로 참고해 작성됐습니다.
 

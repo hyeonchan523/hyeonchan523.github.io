@@ -8,6 +8,7 @@ category : python
 tags: [python, Python trick, python_function]
 toc : true
 toc_sticky : true
+use_math : true
 ---
 이 글은 [슬기로운 파이썬 트릭](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=179118176)의 내용을 정리한 글입니다.
 

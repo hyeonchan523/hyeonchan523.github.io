@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[Python] numpy array 활용하기"
+title:  "[Python] numpy array를 사용할 때 for문을 피해야하는 이유"
 excerpt : "numpy array를 활용할 때 for문을 대체할 방법을 고려해야합니다."
 summary: "Avoid for loops with numpy array"
 
@@ -8,6 +8,7 @@ category : python
 tags: [python, Python trick, numpy, ufunc]
 toc : true
 toc_sticky : true
+use_math: true
 ---
 
 # Avoid for loops with numpy array
@@ -29,8 +30,8 @@ $$x_{Mars} = \frac{(\sin{\theta_2} - \sin{\theta_1}) + (\tan{\phi_1}\cos{\theta_
 y_{Mars} = \tan{\phi_1}x_{Mars} +\sin{\theta_1} - \tan{\phi_1}\cos{\theta_1}$$
 
 - `to_degree`함수는 각도의 단위를 변환해주는 함수이고, `calculate_coordinate`는 화성의 좌표를 계산해주는 함수입니다.
-- `to_degree`에서 단위를 변환해 주는 과정에서 line*에서 array간의 element-wise 계산을 수행합니다.
-- `calculate_coordinate`에서는 line**에서 데이터를 $\theta_1, \phi_1,\theta_2,\phi_2$ **벡터**로 분리했고, line***와 line****에서 화성의 좌표를 계산합니다.
+- `to_degree`에서 단위를 변환해 주는 과정 중에 array간의 element-wise 계산을 수행합니다.
+- `calculate_coordinate`에서는 line3 에서 데이터를 $\theta_1, \phi_1,\theta_2,\phi_2$ **벡터**로 분리했고, line4와 line5에서 화성의 좌표를 계산합니다.
 
 
 <script src="https://gist.github.com/hyeonchan523/212fe5fea366ebb8d190abbe3d57a92f.js"></script>
@@ -57,10 +58,12 @@ y_{Mars} = \tan{\phi_1}x_{Mars} +\sin{\theta_1} - \tan{\phi_1}\cos{\theta_1}$$
 - numpy array를 사용할 때 범용함수(universial function)의 유용함을 확인했습니다.
 - numpy 연산의 특징을 잘 활용할 때, for 문을 사용해 코드가 길어질 때 발생할 수 있는 잠재적인 오류의 원인을 막을 수 있고 빠른 연산 속도를 보장할 수 있습니다. 
 
-[[1]] numpy ufunc docs
-[[2]] Python Lists vs. Numpy Arrays - What is the difference? - UCF open course
-[[3]] 코페르니쿠스 혁명 - wiki
-[1]: https://numpy.org/doc/stable/reference/ufuncs.html
-[2]: https://webcourses.ucf.edu/courses/1249560/pages/python-lists-vs-numpy-arrays-what-is-the-difference
+[[1]] numpy ufunc docs  
+[[2]] Python Lists vs. Numpy Arrays - What is the difference? - UCF open course  
+[[3]] 코페르니쿠스 혁명 - wiki  
+
+
+[1]: https://numpy.org/doc/stable/reference/ufuncs.html  
+[2]: https://webcourses.ucf.edu/courses/1249560/pages/python-lists-vs-numpy-arrays-what-is-the-difference  
 [3]: https://ko.wikipedia.org/wiki/코페르니쿠스_혁명
 

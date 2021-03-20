@@ -5,7 +5,7 @@ excerpt : "numpy array를 활용할 때 for문을 대체할 방법을 고려해�
 summary: "Avoid for loops with numpy array"
 
 category : python
-tags: [python, Python trick, python_function]
+tags: [python, Python trick, numpy, ufunc]
 toc : true
 toc_sticky : true
 ---

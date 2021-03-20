@@ -61,6 +61,8 @@ $$
 - numpy array를 사용할 때 범용함수(universial function)의 유용함을 확인했습니다.
 - numpy 연산의 특징을 잘 활용할 때, for 문을 사용해 코드가 길어질 때 발생할 수 있는 잠재적인 오류의 원인을 막을 수 있고 빠른 연산 속도를 보장할 수 있습니다. 
 
+
+# Reference
 [[1]] numpy ufunc docs  
 [[2]] Python Lists vs. Numpy Arrays - What is the difference? - UCF open course  
 [[3]] 코페르니쿠스 혁명 - wiki  

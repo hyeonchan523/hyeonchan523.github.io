@@ -26,7 +26,7 @@ use_math: true
 - 서울대학교 김성우 교수님의 "머신러닝을 위한 기초 수학 및 프로그래밍 실습" 강의의 과제로 작성했던 코드를 예로 들어보겠습니다.
 - 코페르니쿠스가 화성의 위치를 계산하기위해 유도했던 식을 프로그램화 해보는 과제입니다. 두 시점에서 지구의 태양 중심의 경도($\theta_1, \theta_2$)와 화성의 지구 중심 경도($\phi_1, \phi_2$)로 아래와 같은 식으로 화성의 좌표를 계산할 수 있습니다.
 
-$$x_{Mars} = \frac{(\sin{\theta_2} - \sin{\theta_1}) + (\tan{\phi_1}\cos{\theta_1} - \tan{\phi_2} \cos{\theta_2})}{\tan{\phi_1}-\tan{\phi_2}}  $$  
+$$x_{Mars} = \frac{(\sin{\theta_2} - \sin{\theta_1}) + (\tan{\phi_1}\cos{\theta_1} - \tan{\phi_2} \cos{\theta_2})}{\tan{\phi_1}-\tan{\phi_2}}$$
 $$y_{Mars} = \tan{\phi_1}x_{Mars} +\sin{\theta_1} - \tan{\phi_1}\cos{\theta_1}$$
 
 - `to_degree`함수는 각도의 단위를 변환해주는 함수이고, `calculate_coordinate`는 화성의 좌표를 계산해주는 함수입니다.

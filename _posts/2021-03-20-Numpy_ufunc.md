@@ -28,6 +28,7 @@ use_math : true
 
 \[
 x_{Mars} = \frac{(\sin{\theta_2} - \sin{\theta_1}) + (\tan{\phi_1}\cos{\theta_1} - \tan{\phi_2} \cos{\theta_2})}{\tan{\phi_1}-\tan{\phi_2}}\\
+\\
 y_{Mars} = \tan{\phi_1}x_{Mars} +\sin{\theta_1} - \tan{\phi_1}\cos{\theta_1}
 \]
 

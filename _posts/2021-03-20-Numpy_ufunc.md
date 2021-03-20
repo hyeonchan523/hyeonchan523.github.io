@@ -27,8 +27,8 @@ use_math : true
 - 코페르니쿠스가 화성의 위치를 계산하기위해 유도했던 식을 프로그램화 해보는 과제입니다. 두 시점에서 지구의 태양 중심의 경도($\theta_1,\theta_2$)와 화성의 지구 중심 경도($\phi_1,\phi_2$)로 아래와 같은 식으로 화성의 좌표를 계산할 수 있습니다.  
 
 \[
-x_{Mars} = \frac{(\sin{\theta_2} - \sin{\theta_1}) + (\tan{\phi_1}\cos{\theta_1} - \tan{\phi_2} \cos{\theta_2})}{\tan{\phi_1}-\tan{\phi_2}}\\
-\\
+x_{Mars} = \frac{(\sin{\theta_2} - \sin{\theta_1}) + (\tan{\phi_1}\cos{\theta_1} - \tan{\phi_2} \cos{\theta_2})}{\tan{\phi_1}-\tan{\phi_2}}\]
+\[
 y_{Mars} = \tan{\phi_1}x_{Mars} +\sin{\theta_1} - \tan{\phi_1}\cos{\theta_1}
 \]
 

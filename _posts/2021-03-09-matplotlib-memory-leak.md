@@ -5,7 +5,7 @@ excerpt : "matploilib로 인한 메모리 누수 방지하기"
 summary: "matplotlib 라이브러리를 사용시 발생할 수 있는 메모리 누수는 plt.clf(), plt.close('all')로 방지할 수 있다."
 
 category : python
-tags: [python]
+tags: [python, matplotlib]
 toc : true
 toc_sticky : true
 use_math : true

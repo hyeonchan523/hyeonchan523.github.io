@@ -9,6 +9,7 @@ tags: [python, Python trick, numpy, ufunc]
 toc : true
 toc_sticky : true
 use_math : true
+toc_ads: true
 ---
 
 # Avoid for loops with numpy array

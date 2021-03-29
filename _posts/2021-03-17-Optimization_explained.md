@@ -9,6 +9,7 @@ tags: [Machine learning, Deep learning, Optimization]
 toc : true
 toc_sticky : true
 use_math: true
+toc_ads: true
 ---
 
 

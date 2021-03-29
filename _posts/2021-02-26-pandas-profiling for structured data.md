@@ -9,6 +9,7 @@ tags: [Machine learning, Deep learning, Data science, python]
 toc : true
 toc_sticky : true
 use_math : true
+toc_ads: true
 ---
 pandas Dataframe 형태의 데이터에 대해서 변수별 통계 특성 계산, histogram 그리기, 결측값 확인, 상관성 분석까지 기본적으로 수행하는 데이터 분석에 대한 리포트를 편리하게 만들 수 있는 라이브러리입니다. table 형태의 정형 데이터를 분석할 때 처음에 사용해보면 좋을 것 같습니다.  
 예시는 유명한 데이터셋인 [Titanic 데이터셋](https://www.kaggle.com/c/titanic)을 사용했습니다. 

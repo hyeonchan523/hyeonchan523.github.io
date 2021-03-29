@@ -8,6 +8,7 @@ category : python
 tags: [python, unittest]
 toc : true
 toc_sticky : true
+toc_ads: true
 use_math : true
 ---
 Test-driven develop(TDD)는 개발이 끝난 후에 테스트를 진행하는 것이 아니라, 작은 단위의 기능을 수행하는지 여부를 테스트를 통과한 코드를 전체 코드에 리팩토링해 병합하는 방식의 개발 방법을 이야기합니다. TDD의 시작은 unittest를 작성하는 것입니다. 

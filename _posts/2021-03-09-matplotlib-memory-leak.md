@@ -62,11 +62,11 @@ toc_ads: true
 
 [[1]] wikipedia
 
-[[2]]python에서 프로세스의 cpu 사용량과 memory 사용량 체크하기
+[[2]] python에서 프로세스의 cpu 사용량과 memory 사용량 체크하기
 
-[[3]]Matplotlib의 cla(), clf() 및 close() 메서드의 차이점
+[[3]] Matplotlib의 cla(), clf() 및 close() 메서드의 차이점
 
-[[4]]Stack Overflow
+[[4]] Stack Overflow
 
 [1]: https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EB%88%84%EC%88%98
 [2]: https://helloyjam.github.io/python/check-cpu-and-memory/

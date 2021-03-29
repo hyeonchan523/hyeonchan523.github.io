@@ -105,11 +105,11 @@ use_math: true
 - 학습시 loss function을 조작하는 이유와 효과를 이해할 수 있도록 머신러닝을 공부하며 자주 등장하는 `최적화` 개념을 설명했다.
 
 # Reference
-\[1] Applied Numerical Method with MATLAB for Engineers and Scientists  
+\[1\] Applied Numerical Method with MATLAB for Engineers and Scientists  
 [[2]] 수학적 최적화 - wiki  
 [[3]] 서울대학교 윤성로 교수님 강의 - youtube  
 [[4]] hyperparameter optimization 방법 설명 - Toward datascience  
-\[5] Li, Lisha, et al. "Hyperband: A novel bandit-based approach to hyperparameter optimization." The Journal of Machine Learning Research 18.1 (2017): 6765-6816.  
+\[5\] Li, Lisha, et al. "Hyperband: A novel bandit-based approach to hyperparameter optimization." The Journal of Machine Learning Research 18.1 (2017): 6765-6816.  
 [[6]] pyforest 라이브러리 설명
 
 [2]: https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99%EC%A0%81_%EC%B5%9C%EC%A0%81%ED%99%94

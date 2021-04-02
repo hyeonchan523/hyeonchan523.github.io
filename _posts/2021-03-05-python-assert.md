@@ -43,7 +43,6 @@ assert expression1, 'expression2'
 product = {'name' : 'shoes', 'price' : 50000}
 discount = 0.2
 apply_discount(product, discount)
-
 ```
 
 

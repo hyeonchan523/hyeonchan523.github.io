@@ -44,11 +44,13 @@ use_math : true
 - 21년 하반기에 [seaborn][2]과 [plotly][3] 공부를 시작하려고 한다.
 
 **포스팅에 사용된 코드**
+<script src="https://gist.github.com/hyeonchan523/467fc2ac5d0cfa2a8d3bde6d56cef471.js"></script>
+  
+# Reference
 
 
 [[1]] matplotlib customizeing  
-
-<script src="https://gist.github.com/hyeonchan523/467fc2ac5d0cfa2a8d3bde6d56cef471.js"></script>
+        
 
 
 [1]:https://matplotlib.org/stable/tutorials/introductory/customizing.html

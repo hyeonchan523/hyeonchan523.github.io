@@ -81,7 +81,7 @@ $$
 $$  
 ![img]({{site.url}}/assets/img/affine1.png)
 
-- 위의 식을 앞에서 했던 방식처럼 하나의 matrix와 vector의 곱으로 바꿔 $\vec{y} = \mathbf{W'}\vec{x'}$표현하면 bias가 weight matrix 안으로 들어가는 셈이 되고, 그래프는 다음과 같이 다시 그릴 수 있다.
+- 위의 식을 앞에서 했던 방식처럼 하나의 matrix와 vector의 곱으로 바꿔 $\vec{y} = \mathbf{W'}\vec{x'}$표현하면 bias가 weight matrix 안으로 들어가는 셈이 되고, 그래프는 다음과 같이 다시 그릴 수 있다.  
 ![img]({{site.url}}/assets/img/affine2.png)
 
 **Affine transformation의 다른 의미는 [2]를 참고**  

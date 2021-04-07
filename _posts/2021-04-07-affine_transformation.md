@@ -5,7 +5,7 @@ excerpt: "linear transformation과 헷갈렸던 Affine을 정리했다."
 summary: "Affine transformation = Linear transformation + 평행 이동"
 
 category: DS
-tags: [Machine learning, Deep learning, Affin Transformation]
+tags: [Machine learning, Deep learning, Affine Transformation]
 toc: true
 toc_sticky: true
 use_math: true

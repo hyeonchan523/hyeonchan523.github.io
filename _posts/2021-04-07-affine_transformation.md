@@ -28,10 +28,10 @@ toc_ads: true
 - **"선형"**이라는 말 때문에 선형 함수를 1차 함수로 오해할 수 있다.
 - 일반적인 단일 변수 일차 함수는 $f(x) = m x + n$로 표현할 수 있다.
 
-$$
+\[
 f(c_1a + c_2b) = m(c_1a + c_2b) + n  = mc_1a +mc_2b +n \cdots (1)\\{}\\
 c_1f(a) +c_2f(b) = mc_1a +mc_2b + 2n \cdots (2)
-$$
+\]
 
 - (1)과 (2)가 다르기 때문에 일반적인 일차 함수는 선형함수가 아니다.
 - 일차 함수 중 y절편이 0인 경우에만 선형 함수다.
@@ -41,7 +41,7 @@ $$
 - 다변수 일차 함수는 $f(\vec{x}) = f(x_1,x_2, \dots,x_n) = m_1 x_1 +m_2x_2 +\cdots + m_nx_n + n$로 표현할 수 있는데 마찬가지로 이 중 $n$이 0인 경우에만 선형 함수라고 할 수 있다.
 - 아래의 $f$는 선형이 아니지만, $g$는 선형이다.
 
-$$f(x_1, x_2) = 2x_1 + 3x_2 +1 ,\,\, \,\,g(x_1, x_2) = 2x_1 +3x_2 $$
+\[f(x_1, x_2) = 2x_1 + 3x_2 +1 ,\,\, \,\,g(x_1, x_2) = 2x_1 +3x_2 \]
 
 ## 선형 변환 linear transformation
 
@@ -54,20 +54,7 @@ $$f(x_1, x_2) = 2x_1 + 3x_2 +1 ,\,\, \,\,g(x_1, x_2) = 2x_1 +3x_2 $$
 - 위의 식에서 $\vec{b}$를 더하는 과정을 행렬과 벡터의 곱 계산 안으로 넣을 수 있다.
 - A 행렬의 마지막 열에 $\vec{b}$를 포함시키고, $\vec{x}$의 마지막 요소에 1을 추가해 다음과 같이 만들면 $\vec{y} = \mathbf{A}\vec{x} +\vec{b} = \mathbf{A'}\vec{x'}$ 로 만들 수 있다.
 
-\[
-\mathbf{A'} = \begin{bmatrix}
-a_{11} & \cdots & a_{1n} &b_1\\
-\vdots & \ddots & \vdots & \vdots\\
-a_{n1} & \cdots & a_{nn} & b_n
-\end{bmatrix},\,\,
-\vec{x'} =
-\begin{bmatrix}
-x_{1} \\
-\vdots\\
-x_{n} \\
-1
-\end{bmatrix}
-\]
+![img]({{site.url}}/assets/img/affine_equation.png)
 
 - 이러한 방식으로 Affine 변환도 행렬과 벡터의 곱으로 표현할 수 있다.
 
@@ -76,13 +63,15 @@ x_{n} \\
 - Neural network의 layer는 입력 feature들의 linear transformation에 bias를 더하는 affine transformation 후 activation function에 통과시켜 비선형 변환을 하는 역할을 한다.
 - 이 과정은 다음과 같은 수식으로 표현되고, 이를 도식화하면 그 아래의 그림과 같이 표현할 수 있다. $\mathbf{W}$는 weight matrix이고, $\vec{b}$는 bias이다.
 
-$$
+\[
 \vec{y} = \mathbf{W}\vec{x} + \vec{b} \cdots \mathsf{Affine\, Transformation}\\{}\\ \vec{\sigma} = \mathbf{activation\_function}(\vec{y}) \cdots \mathsf{non -linear \, transformation}
-$$  
+\]  
+
 ![img]({{site.url}}/assets/img/affine1.png)
 
 - 위의 식을 앞에서 했던 방식처럼 하나의 matrix와 vector의 곱으로 바꿔 $\vec{y} = \mathbf{W'}\vec{x'}$표현하면 bias가 weight matrix 안으로 들어가는 셈이 되고, 그래프는 다음과 같이 다시 그릴 수 있다.  
-![img]({{site.url}}/assets/img/affine2.png)
+
+![img]({{site.url}}/assets/img/affine2.png)  
 
 **Affine transformation의 다른 의미는 [2]를 참고**  
 # 마무리

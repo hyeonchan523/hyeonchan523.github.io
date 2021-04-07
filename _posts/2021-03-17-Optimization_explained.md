@@ -114,7 +114,9 @@ toc_ads: true
 [[5]] Li, Lisha, et al. "Hyperband: A novel bandit-based approach to hyperparameter optimization." The Journal of Machine Learning Research 18.1 (2017): 6765-6816.  
 [[6]] pyforest 라이브러리 설명
 
+[1]: http://www.kyobobook.co.kr/product/detailViewEng.laf?mallGb=ENG&ejkGb=ENG&barcode=9781260083255
 [2]: https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99%EC%A0%81_%EC%B5%9C%EC%A0%81%ED%99%94
 [3]: https://www.youtube.com/watch?v=oVDmTr3SLKM&list=PLDhCIPjHgzmqqcrmOIBlAzghdpdxFNVY6&index=3
 [4]: https://towardsdatascience.com/intuitive-hyperparameter-optimization-grid-search-random-search-and-bayesian-search-2102dbfaf5b
+[5]: https://scholar.google.co.kr/scholar?q=Hyperband:+A+novel+bandit-based+approach+to+hyperparameter+optimization.&hl=ko&as_sdt=0&as_vis=1&oi=scholart
 [6]: https://hyeonchan523.github.io/python/pyforest/

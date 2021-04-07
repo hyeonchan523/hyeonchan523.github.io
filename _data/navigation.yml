@@ -4,6 +4,8 @@ main:
     url: /categories/DS/
   - title: "Python"
     url: /categories/python/
+  - title: "Algorithm"
+    url: /categories/Algorithm/
   - title: "Tags"
     url: /tags/ 
   #- title: "Quick-Start Guide"

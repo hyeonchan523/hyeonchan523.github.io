@@ -29,9 +29,8 @@ toc_ads: true
 - 일반적인 단일 변수 일차 함수는 $f(x) = m x + n$로 표현할 수 있다.
 
 \[
-f(c_1a + c_2b) = m(c_1a + c_2b) + n  = mc_1a +mc_2b +n \cdots (1)\\{}\\
-c_1f(a) +c_2f(b) = mc_1a +mc_2b + 2n \cdots (2)
-\]
+f(c_1a + c_2b) = m(c_1a + c_2b) + n  = mc_1a +mc_2b +n \cdots (1)\\
+c_1f(a) +c_2f(b) = mc_1a +mc_2b + 2n \cdots (2)\]
 
 - (1)과 (2)가 다르기 때문에 일반적인 일차 함수는 선형함수가 아니다.
 - 일차 함수 중 y절편이 0인 경우에만 선형 함수다.
@@ -64,8 +63,7 @@ c_1f(a) +c_2f(b) = mc_1a +mc_2b + 2n \cdots (2)
 - 이 과정은 다음과 같은 수식으로 표현되고, 이를 도식화하면 그 아래의 그림과 같이 표현할 수 있다. $\mathbf{W}$는 weight matrix이고, $\vec{b}$는 bias이다.
 
 \[
-\vec{y} = \mathbf{W}\vec{x} + \vec{b} \cdots \mathsf{Affine\, Transformation}\\{}\\ \vec{\sigma} = \mathbf{activation\_function}(\vec{y}) \cdots \mathsf{non -linear \, transformation}
-\]  
+\vec{y} = \mathbf{W}\vec{x} + \vec{b} \cdots \mathsf{Affine\, Transformation}\\{}\\ \vec{\sigma} = \mathbf{activation\_function}(\vec{y}) \cdots \mathsf{non -linear \, transformation}\]  
 
 ![img]({{site.url}}/assets/img/affine1.png)
 

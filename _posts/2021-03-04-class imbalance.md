@@ -53,14 +53,14 @@ use_math : true
 - class 별로 loss function에 weight를 주는 방식과 sample별로 weight를 주는 방식이 존재
 - 둘 다 minority class에 속한 데이터 샘플에 더 집중해 학습할 수 있도록, loss 값에 weight를 부여하는 방법
 
-$$L = \sum l_i \quad \to \quad L_{weighted} = \sum w_i*l_i$$
+\[L = \sum l_i \quad \to \quad L_{weighted} = \sum w_i*l_i\]
 
 ***Class Weight***
 
 - class weight는 전체 학습 데이터에 대해서 클래스별 가중치를 계산하는 방법으로 같은 클래스 내의 데이터 샘플은 같은 weight값을 갖는다.
 - class i에 해당하는 class weight는 다음과 같이 계산. sklearn에서 제공하는 compute_class_weight로 계산, 활용 가능
 
-$$w_i = \frac{total\ num\ samples}{num\ samples\ in \ class \ i\times n\_classes}$$
+\[w_i = \frac{total\ num\ samples}{num\ samples\ in \ class \ i\times n\_classes}\]
 
 - total num samples와 n_classes는 weight를 normalizing하는 항으로 class별 샘플의 역수가 weight를 결정함
 
@@ -72,20 +72,20 @@ $$w_i = \frac{total\ num\ samples}{num\ samples\ in \ class \ i\times n\_classes
         - 말 그대로 배치 내에서 sample의 빈도
         - 배치 내의 n번째 샘플이 class i에 속할 때 sample weight는
 
-    $$w_{n,i} = \frac{1}{Number \ of\ samples\  in\ Class_i}$$
+    \[w_{n,i} = \frac{1}{Number \ of\ samples\  in\ Class_i}\]
 
     - *Inverse of Square Root of Number of Samples (ISNS)*
         - 배치 내에서 sample의 빈도의 루트값
         - 배치 내의 n번째 샘플이 class i에 속할 때 sample weight는
 
-        $$w_{n,i} = \frac{1}{\sqrt{Number \ of\ samples\  in\ Class_i}}$$
+        \[w_{n,i} = \frac{1}{\sqrt{Number \ of\ samples\  in\ Class_i}}\]
 
     - *Effective Number of Samples (ENS)*
         - [Cui, Yin, et al.](https://openaccess.thecvf.com/content_CVPR_2019/html/Cui_Class-Balanced_Loss_Based_on_Effective_Number_of_Samples_CVPR_2019_paper.html)이 제안된 방법
         - sample 수만 관심을 갖는 것이 아니라, data sample의 분포를 함께 고려한 유효 샘플 수 (effective number of samples)
 
-        $$w_{m,i} = \frac{1}{E_{n_{c}}}\\    
-        {E_{n_{c}}} = \frac{1-\beta^{n_c} }{1-\beta}$$
+        \[w_{m,i} = \frac{1}{E_{n_{c}}}\\    
+        {E_{n_{c}}} = \frac{1-\beta^{n_c} }{1-\beta}\]
 
         - $\beta$는 hyperparameter로 논문의 저자는 0.9, 0.99, 0.999로 바꿔가며 실험을 해보길 권함
     - sample weight에서도 class weight와 같이 normalize해서 활용할 수 있음

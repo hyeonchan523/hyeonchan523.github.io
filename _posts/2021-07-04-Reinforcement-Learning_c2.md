@@ -71,12 +71,12 @@ $$Q_{t}(a)=\dfrac{\sum^{t-1}_{i=1}R_{i}\ I(A_{i}=a)}{\sum^{t-1}_{i = 1}I(A_i = a
 - time step을 0과 1 사이의 상수로 고정시키는 것이 한가지 방법
 - $Q_{n+1} = Q_{n} + \alpha [R_{n} - Q_{n}]$으로 놓으면 앞과 비슷한 방식으로
 
-    \[Q_{n+1} = \frac{1}{a_n}\sum^{n}_{i=1}R_i \\
+    $$Q_{n+1} = \frac{1}{a_n}\sum^{n}_{i=1}R_i \\
     = aR_{n} + Q_{n} -aQ_{n}\\
     = aR_{n} + (1-a)Q_{n}\\
     = aR_{n} + [(1-a)aR_{n-1} + (1-a)]\\
     = aR_{n} + aR_{n} + (1-a)aR_{n-1} + (1-a)^{2}aR_{n-2} + \cdots+(1-a)^{n-1}aR_{1} + (1-a)^{n}Q_1\\
-    = (1-a)^{n} Q_{1} + \sum^{n}_{i=1}a(1-a)^{n-i}R_{i}\]
+    = (1-a)^{n} Q_{1} + \sum^{n}_{i=1}a(1-a)^{n-i}R_{i}$$
 - 식을 살펴보면 초기 추정치 $Q_{1}$과 각 시점의 보상들은 한 시점이 지남에 따라 (1-a)만큼 감쇄된 값으로, i 시점의 보상은 n 시점까지 남은 time step(n-i)만큼 감쇄되어 n+1 시점에 반영됨.
 - $\alpha$는 감소율의 의미를 갖는다.
 
@@ -106,13 +106,19 @@ $$Q_{t}(a)=\dfrac{\sum^{t-1}_{i=1}R_{i}\ I(A_{i}=a)}{\sum^{t-1}_{i = 1}I(A_i = a
 
 <script src="https://gist.github.com/hyeonchan523/6baa6b01a4a50475c8a4643b1a9bd28b.js"></script>
 
-- True value를 
-- action별 value는 다음 그림에서 보는 것과 같이 action 6이 가장 크다.
+- 책의 설명과 동일하게 True value를 평균이 0이고 분산이 1인 normal distribution에서 랜덤 추출
+- 이 경우에 action별 value는 다음 그림에서 보는 것과 같이 action 6이 가장 크다.
 
 ![img]({{site.url}}/assets/img/True_values.png)
 
 - greedy한 선택만 반복하는 경우 아래 코드로 구현 가능하다.
 <script src="https://gist.github.com/hyeonchan523/e798133134054a2d4ec5b8706dfff6a4.js"></script>
+
+- reward는 2000번의 시뮬레이션을 시점별로 평균을 취한 값
+- optimal action은 해당 시점까지 True reward의 기댓값이 가장 높은 action을 취한 비율을 나타냄
+
+![img]({{site.url}}/assets/img/reward1.png)
+![img]({{site.url}}/assets/img/action1.png)
 ### epsilon-greedy 방법
 
 - 기본적으로 greedy한 선택을 하며 $\epsilon$의 확률로 랜덤하게 explore를 하도록 하는 방법
@@ -121,6 +127,9 @@ $$Q_{t}(a)=\dfrac{\sum^{t-1}_{i=1}R_{i}\ I(A_{i}=a)}{\sum^{t-1}_{i = 1}I(A_i = a
 <script src="https://gist.github.com/hyeonchan523/927486386a402ecc5592550e1e2b30d6.js"></script>
 
 - 위 코드에서 epsilon 값으로 1%와 10%를 사용했을 때의 결과를 비교해보면 exploration을 더 많이 하도록 유도했을 때, 장기적으로 좋은 결과를 얻게 되는 것을 확인했다.
+
+![img]({{site.url}}/assets/img/reward2.png)
+![img]({{site.url}}/assets/img/action2.png)
 
 ### 긍정적 초깃값(Optimistic initial value)
 
@@ -134,13 +143,15 @@ $$Q_{t}(a)=\dfrac{\sum^{t-1}_{i=1}R_{i}\ I(A_{i}=a)}{\sum^{t-1}_{i = 1}I(A_i = a
 - 이 문제는 정상 문제이기 때문에 긍정적 초깃값이 긍정적인 영향을 주었다.
 - 탐험을 유도한 효과는 초반에 끝나기 때문에 후반부에는 최적의 선택을 90% 이상 유지하는 것을 보여줌.
 
+![img]({{site.url}}/assets/img/reward3.png)
+![img]({{site.url}}/assets/img/action3.png)
 
 ### 신뢰 상한 행동 선택(Upper confidence bound, UCB)
 
 - 행동 가치 추정에는 항상 불확실성이 있기 때문에 지속적인 탐험이 필요함
 - UCB는 가치의 추정치와 불확실성을 함께 고려해 행동을 결정함
 
-\[A_{t} = argmax [\ Q_{t}(a) + c\sqrt{\dfrac{ln\  t}{N_{t}(a)}}\ ]\]
+$$A_{t} = argmax [\ Q_{t}(a) + c\sqrt{\dfrac{ln\  t}{N_{t}(a)}}\ ]$$
 
 - c는 하이퍼 파라미터이고, 루트를 포함하는 항이 추정의 불확실성을 나타낸다.
 
@@ -152,5 +163,7 @@ $$Q_{t}(a)=\dfrac{\sum^{t-1}_{i=1}R_{i}\ I(A_{i}=a)}{\sum^{t-1}_{i = 1}I(A_i = a
 
 <script src="https://gist.github.com/hyeonchan523/3546da1edc81fe6423a381b0c9cfc434.js"></script>
 
+![img]({{site.url}}/assets/img/reward4.png)
+![img]({{site.url}}/assets/img/action4.png)
 
 - epsilon-greedy 방법에서는 가치 추정치가 가장 높은 값이 아닌 행동 중 랜덤하게 선택을 하는 것에 비해, UCB에서는 불확실성을 고려해 행동을 선택한다는 차이점이 있다.

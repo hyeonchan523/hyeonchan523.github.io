@@ -9,7 +9,8 @@ tags: [강화학습]
 toc : true
 toc_sticky : true
 toc_ads: true
-use_math : true
+#use_math : true
+mathjax : true
 ---
 
 이번 장에서는 다중 선택 문제를 해결하기 위해 exploration - exploitation trade-off를 다루기 위한 간단한 방법들을 설명함.  
@@ -106,13 +107,12 @@ $$Q_{t}(a)=\dfrac{\sum^{t-1}_{i=1}R_{i}\ I(A_{i}=a)}{\sum^{t-1}_{i = 1}I(A_i = a
 <script src="https://gist.github.com/hyeonchan523/6baa6b01a4a50475c8a4643b1a9bd28b.js"></script>
 
 - True value를 
-
-<script src="https://gist.github.com/hyeonchan523/e798133134054a2d4ec5b8706dfff6a4.js"></script>
-
 - action별 value는 다음 그림에서 보는 것과 같이 action 6이 가장 크다.
 
 ![img]({{site.url}}/assets/img/True_values.png)
 
+- greedy한 선택만 반복하는 경우 아래 코드로 구현 가능하다.
+<script src="https://gist.github.com/hyeonchan523/e798133134054a2d4ec5b8706dfff6a4.js"></script>
 ### epsilon-greedy 방법
 
 - 기본적으로 greedy한 선택을 하며 $\epsilon$의 확률로 랜덤하게 explore를 하도록 하는 방법

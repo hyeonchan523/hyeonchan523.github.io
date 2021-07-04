@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[강화학습] Introduction"
+title:  "[강화학습] 다중 선택"
 excerpt : "단단한 머신러닝 Chapter 2 다중 선택"
 summary: "Chapter 2 Multi-armed bandit"
 
@@ -12,11 +12,6 @@ toc_ads: true
 use_math : true
 ---
 
-***기호 정리***
-행동 (action) : a | t 시점에서 행동은 A_t  
-보상 (reward) : R_t   
-가치 (value) : q_*(a) = E[R_t | A_t = a] | t 시점에서 가치의 추정치는 Q_t(a)  
-
 이번 장에서는 다중 선택 문제를 해결하기 위해 exploration - exploitation trade-off를 다루기 위한 간단한 방법들을 설명함.  
 
 ## 다중 선택 문제 소개
@@ -26,7 +21,7 @@ use_math : true
 - 다중 선택 문제에서 k개의 행동에는 각각 기대할 수 있는 평균 보상 값이 **가치**
 - t 시점에서 행동 A_t가 선택됐을 때 보상을 R_t라고 하면 행동 a의 가치는
 
-$q_{*}(a) = E[R_{t} | A_{t} =a]$
+$$q_{*}(a) = E[R_{t} | A_{t} =a]$$
 
 - 행동의 가치를 정확히 알 수 없기 때문에 좋은 가치의 추정치 $Q_{t}(a)$를 구하는 것이 목표
 
@@ -49,7 +44,7 @@ $q_{*}(a) = E[R_{t} | A_{t} =a]$
 
 - t 시점까지 행동 a를 선택했을 때 얻은 보상의 평균을 가치로 추정하는 방법
 
-\[Q_{t}(a) = \dfrac{\sum^{t-1}_{i = 1} R_{i}\ I(A_{i}=a)}{\sum^{t-1}_{i = 1}I(A_i = a)}\]
+$$Q_{t}(a) = \dfrac{\sum^{t-1}_{i = 1} R_{i}\ I(A_{i}=a)}{\sum^{t-1}_{i = 1}I(A_i = a)}$$
 
 - 여기서 $I$는 파라미터가 참일 때는 1을, 거짓일 때는 0인 함수
 - 위 식으로 가치를 추정하는 코드를 구현하면 매 시점마다 중복되는 계산을 수행하게 됨

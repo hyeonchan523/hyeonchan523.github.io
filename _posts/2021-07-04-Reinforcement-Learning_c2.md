@@ -14,6 +14,7 @@ mathjax : true
 ---
 
 이번 장에서는 다중 선택 문제를 해결하기 위해 exploration - exploitation trade-off를 다루기 위한 간단한 방법들을 설명함.
+  
 *210705 수정* : 이번 장에서 다루는 다중 선택 테스트는 reward가 stationary한 경우를 다루고, 이 다음장에서 finite Markov decision process부터 재미있는 예시들이 
 
 ## 다중 선택 문제 소개
